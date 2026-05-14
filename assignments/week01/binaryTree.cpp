@@ -144,7 +144,7 @@ int main()
     int values[] = {10, 5, 2, 8, 15, 20, 17, 1, 7, 13, 11, 9, 3};   ///< Initial values Array
     Node* root{};   ///< Pointer for the root
 
-    for(int x : values)
+    for(const int &x : values)
     {
         AddValue(root, x);
     }
