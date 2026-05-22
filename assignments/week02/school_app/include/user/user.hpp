@@ -13,9 +13,9 @@
 */
 enum class UserType
 {
-    NONE,       ///< UserType 0
-    TEACHER,    ///< UserType 1
-    STUDENT     ///< UserType 2
+    NONE,
+    TEACHER,
+    STUDENT
 };
 
 /**
