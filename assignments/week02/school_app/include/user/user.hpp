@@ -9,23 +9,22 @@
 #include <string>
 
 /**
+* @brief Enum structure for diferent user types.
+*/
+enum class UserType
+{
+    NONE,       ///< UserType 0
+    TEACHER,    ///< UserType 1
+    STUDENT     ///< UserType 2
+};
+
+/**
  * @class User
  *
  * @brief Abstract base class for an User.
  */
 class User
 {
-    public:
-        /**
-         * @brief Enum structure for diferent user types-
-         */
-        enum TYPE
-        {
-            NONE,       ///< Type 0
-            TEACHER,    ///< Type 1
-            STUDENT     ///< Type 2
-        };
-
     protected:
         struct BirthDate
         {
@@ -73,11 +72,11 @@ class User
         virtual size_t getID() const;
 
         /**
-         * @brief Returns the enum type of the User.
+         * @brief Returns the enum userType of the User.
          *
-         * @return Enum User type.
+         * @return Enum User userType.
          */
-        virtual TYPE getType() const = 0;
+        virtual UserType getType() const = 0;
 
         /**
          * @brief Returns the first name of the user.
@@ -128,9 +127,9 @@ class User
         /**
          * @brief Converts an enum value to a string.
          *
-         * @param type Enum value to process.
+         * @param userType Enum value to process.
          *
          * @return String representing the enum.
          */
-        static std::string enumToString(User::TYPE type);
+        static std::string enumToString(UserType userType);
 };

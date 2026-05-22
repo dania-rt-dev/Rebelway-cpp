@@ -27,7 +27,7 @@ class Institution
 
         std::vector<std::string> m_subjects{};
         std::unordered_map<std::string, User*> m_userMap{};
-        std::unordered_map<User::TYPE, std::vector<std::string>> m_typeMap{};
+        std::unordered_map<UserType, std::vector<std::string>> m_typeMap{};
 
     public:
 
@@ -137,9 +137,9 @@ class Institution
         virtual void printAllUserData() const;
 
         /**
-         * @brief Prints the full information of the users of the given type.
+         * @brief Prints the full information of the users of the given userType.
          *
-         * @param type User enum type
+         * @param userType User enum userType
          */
-        virtual void printUsersByType(const User::TYPE type) const;
+        virtual void printUsersByType(const UserType userType) const;
 };

@@ -22,7 +22,7 @@ void Teacher::printData() const
     User::printData();
 }
 
-User::TYPE Teacher::getType() const
+UserType Teacher::getType() const
 {
-    return TYPE::TEACHER;
+    return UserType::TEACHER;
 }

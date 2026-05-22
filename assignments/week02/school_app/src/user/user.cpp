@@ -33,9 +33,9 @@ size_t User::getID() const
     return m_id;
 }
 
-User::TYPE User::getType() const
+UserType User::getType() const
 {
-    return TYPE::NONE;
+    return UserType::NONE;
 }
 
 std::string User::getFirstName() const
@@ -73,14 +73,14 @@ void User::setBirthDate(int year, int month, int day)
     m_birthDate.m_day = day;
 }
 
-std::string User::enumToString(User::TYPE type)
+std::string User::enumToString(UserType userType)
 {
-    switch(type)
+    switch(userType)
     {
-        case User::TYPE::STUDENT:
+        case UserType::STUDENT:
             return "Student";
         
-        case User::TYPE::TEACHER:
+        case UserType::TEACHER:
             return "Teacher";
 
         default:

@@ -110,10 +110,10 @@ void Institution::printUserData(const std::string& userName) const
         iter->second->printData();
         switch(iter->second->getType())
         {
-            case User::TYPE::STUDENT:
+            case UserType::STUDENT:
                 std::cout << "They are a student\n";
                 break;
-            case User::TYPE::TEACHER:
+            case UserType::TEACHER:
                 std::cout << "They are a teacher\n";
                 break;
             default:
@@ -142,12 +142,12 @@ void Institution::printAllUserData() const
     }
 }
 
-void Institution::printUsersByType(const User::TYPE type) const
+void Institution::printUsersByType(const UserType userType) const
 {  
-    auto mainIter = m_typeMap.find(type);
+    auto mainIter = m_typeMap.find(userType);
     if(mainIter == m_typeMap.end() || mainIter->second.empty())
     {
-        std::cout << "There are not " << User::enumToString(type) << " in the map\n";
+        std::cout << "There are not " << User::enumToString(userType) << " in the map\n";
         return;
     }
     else

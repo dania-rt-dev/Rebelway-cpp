@@ -51,10 +51,10 @@ class Teacher : public User
         virtual void printData() const override;
 
         /**
-         * @brief Returns the enum type of the Teacher.
+         * @brief Returns the enum userType of the Teacher.
          *
-         * @return User type.
+         * @return User userType.
          */
-        virtual TYPE getType() const override;
+        virtual UserType getType() const override;
 
 };

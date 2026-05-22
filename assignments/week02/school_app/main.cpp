@@ -64,17 +64,17 @@ int main()
     newInstitution.printAllUserData();
     std::cout << "----------------------\n";
     std::cout << "PRINT BY TYPE STUDENT ----------------------\n";
-    newInstitution.printUsersByType(User::TYPE::STUDENT);
+    newInstitution.printUsersByType(UserType::STUDENT);
     std::cout << "PRINT BY TYPE TEACHER ----------------------\n";
-    newInstitution.printUsersByType(User::TYPE::TEACHER);
+    newInstitution.printUsersByType(UserType::TEACHER);
     std::cout << "----------------------\n";
     newInstitution.removeUser("Mark");  ///< Remove exisitng value test (student).
     newInstitution.removeUser("Mark");  ///< Remove previously exisintg calue test.
     newInstitution.removeUser("John");  ///< Remove existing value test (teacher).
     std::cout << "PRINT BY TYPE STUDENT ----------------------\n";
-    newInstitution.printUsersByType(User::TYPE::STUDENT);
+    newInstitution.printUsersByType(UserType::STUDENT);
     std::cout << "PRINT BY TYPE TEACHER ----------------------\n";
-    newInstitution.printUsersByType(User::TYPE::TEACHER);
+    newInstitution.printUsersByType(UserType::TEACHER);
 
     return 0;
 }

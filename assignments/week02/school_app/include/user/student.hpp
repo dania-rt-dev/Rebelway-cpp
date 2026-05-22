@@ -51,9 +51,9 @@ class Student : public User
         virtual void printData() const override;
 
         /**
-         * @brief Returns the enum type of the Student.
+         * @brief Returns the enum userType of the Student.
          *
-         * @return User type.
+         * @return User userType.
          */
-        virtual TYPE getType() const override;
+        virtual UserType getType() const override;
 };
