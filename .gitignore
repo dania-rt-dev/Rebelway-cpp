@@ -1,6 +1,12 @@
 # Prerequisites
 *.d
 
+*.zip
+*/week01/Dania_Rebelway-cpp-coding-for-games_week01.txt
+*/week02/Rebelway-cpp-coding-for-games_week02_Dania.txt
+*/week03/Rebelway-cpp-coding-for-games_week03_Dania.txt
+
+
 # Compiled Object files
 *.slo
 *.lo
@@ -66,4 +72,6 @@ vcpkg_installed/
 
 # test output & cache
 Testing/
+samples/
+**/third_party/
 .cache/
